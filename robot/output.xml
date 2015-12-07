@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20151207 08:47:11.190" generator="Robot 2.9.2 (Python 2.7.9 on win32)">
+<suite source="C:\Users\IEUser\robot\robot\login.robot" id="s1" name="Login">
+<test id="s1-t1" name="Open Google Page">
+<kw name="Open Google Web Page in Chrome Browser">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20151207 08:47:11.341" level="INFO">Opening browser 'Firefox' to base url 'http://google.com/'</msg>
+<status status="PASS" endtime="20151207 08:47:40.342" starttime="20151207 08:47:11.341"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20151207 08:47:41.036" starttime="20151207 08:47:40.343"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20151207 08:47:41.037" starttime="20151207 08:47:41.037"></status>
+</kw>
+<status status="PASS" endtime="20151207 08:47:41.038" starttime="20151207 08:47:11.341"></status>
+</kw>
+<kw name="Google page should be open">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Google</arg>
+</arguments>
+<msg timestamp="20151207 08:47:41.141" level="INFO">Current page contains text 'Google'.</msg>
+<status status="PASS" endtime="20151207 08:47:41.141" starttime="20151207 08:47:41.057"></status>
+</kw>
+<status status="PASS" endtime="20151207 08:47:41.141" starttime="20151207 08:47:41.056"></status>
+</kw>
+<kw name="Check Google search box is present">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+</arguments>
+<msg timestamp="20151207 08:47:41.156" level="INFO">Current page contains element 'id=lst-ib'.</msg>
+<status status="PASS" endtime="20151207 08:47:41.156" starttime="20151207 08:47:41.143"></status>
+</kw>
+<status status="PASS" endtime="20151207 08:47:41.157" starttime="20151207 08:47:41.143"></status>
+</kw>
+<tags>
+<tag>DEBUG</tag>
+</tags>
+<status status="PASS" endtime="20151207 08:47:41.158" critical="yes" starttime="20151207 08:47:11.341"></status>
+</test>
+<doc>Suite description
+
+The system specific keywords created here form our own
+domain specific language . They utilize keywords provided
+by the imported Selenium2Library
+Test Suite is about opening Google Page</doc>
+<status status="PASS" endtime="20151207 08:47:41.159" starttime="20151207 08:47:11.200"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">DEBUG</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login" pass="1">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
